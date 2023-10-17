@@ -22,7 +22,7 @@ impl<T> Stack<T> {
         if self.is_empty(){
             None
         }else {
-            Some(&self.items[&self.size() - 1])
+            Some(&self.items[self.size() - 1])
         }
     }
 
