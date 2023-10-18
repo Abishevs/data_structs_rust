@@ -1,7 +1,12 @@
 mod stack;
+mod queue;
 use stack::Stack;
+use queue::Queue;
+
 fn main() {
     let mut test_stack = Stack::new();
+    let mut test_queue = Queue::new();
+    test_queue.push("BRW");
     test_stack.push(2);
     test_stack.push(5);
     test_stack.push(3);
@@ -32,6 +37,7 @@ fn main() {
         None => println!("PEEKED Stack should be empty and None match is runeed")
     }
 
+    test_stack.peek();
     println!("Last state of the stack(should be empty by now) {:?}", test_stack);
 
 }
